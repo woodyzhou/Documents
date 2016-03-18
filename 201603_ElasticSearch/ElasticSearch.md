@@ -100,7 +100,7 @@ Deploy your own Elasticsearch cluster in seconds. A fully hosted and managed sol
 
 ### <a name="dcp"></a>Distributed Computing Platform
 
-![](images/es-cluster-arch2.png)
+![](Images/es-cluster-arch2.png)
 
 #### <a name="cluster"></a>Cluster (physical)
 
@@ -124,7 +124,7 @@ Deploy your own Elasticsearch cluster in seconds. A fully hosted and managed sol
 	* Replica (runtime config)
 	* **number\_of\_shards** = index\_size / max\_shard\_size
 
-![](images/es-cluster-arch1.png)
+![](Images/es-cluster-arch1.png)
 
 #### <a name="scale"></a>Scale?
 
