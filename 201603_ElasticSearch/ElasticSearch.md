@@ -195,24 +195,24 @@ path.logs: /opt/ep/logs
 
 ```
 $ curl 'http://localhost:9200/_cat/shards'
-.marvel-2016.03.08 0 r STARTED      908421 934.7mb 10.65.251.17  bpe-es-5166.slc01.dev.ebayc3.com 
-.marvel-2016.03.08 0 p STARTED      908421 934.7mb 10.65.246.220 bpe-es-9198.slc01.dev.ebayc3.com 
-.marvel-2016.03.09 0 p STARTED      868424 889.7mb 10.65.217.119 bpe-es-8955.slc01.dev.ebayc3.com 
-.marvel-2016.03.09 0 r STARTED      868424 889.7mb 10.65.246.22  bpe-es-3192.slc01.dev.ebayc3.com 
-.marvel-2015.12.29 0 p STARTED      374853 553.1mb 10.65.254.163 bpe-es-4899.slc01.dev.ebayc3.com 
-.marvel-2015.12.29 0 r STARTED      374853 553.1mb 10.65.246.220 bpe-es-9198.slc01.dev.ebayc3.com 
-.marvel-2015.12.28 0 p STARTED      362034 539.7mb 10.65.254.163 bpe-es-4899.slc01.dev.ebayc3.com 
-.marvel-2015.12.28 0 r STARTED      362034 539.7mb 10.65.221.214 bpe-es-9950.slc01.dev.ebayc3.com 
-.marvel-2015.12.27 0 r STARTED      356848   539mb 10.65.254.163 bpe-es-4899.slc01.dev.ebayc3.com 
-.marvel-2015.12.27 0 p STARTED      356848   539mb 10.65.203.164 bpe-es-3371.slc01.dev.ebayc3.com 
-.marvel-2016.03.01 0 r STARTED      855520 888.2mb 10.65.251.17  bpe-es-5166.slc01.dev.ebayc3.com 
-.marvel-2016.03.01 0 p STARTED      855520 888.2mb 10.65.221.214 bpe-es-9950.slc01.dev.ebayc3.com 
-.marvel-2015.12.26 0 p STARTED      341590 522.6mb 10.65.254.163 bpe-es-4899.slc01.dev.ebayc3.com 
-.marvel-2015.12.26 0 r STARTED      341590 522.6mb 10.65.221.214 bpe-es-9950.slc01.dev.ebayc3.com 
-.marvel-2016.03.02 0 p STARTED      826767 858.3mb 10.65.203.164 bpe-es-3371.slc01.dev.ebayc3.com 
-.marvel-2016.03.02 0 r STARTED      826767 858.3mb 10.65.221.106 bpe-es-4948.slc01.dev.ebayc3.com 
-.marvel-2016.03.03 0 r STARTED      876258 903.2mb 10.65.251.17  bpe-es-5166.slc01.dev.ebayc3.com 
-.marvel-2016.03.03 0 p STARTED      876258 903.2mb 10.65.217.119 bpe-es-8955.slc01.dev.ebayc3.com 
+.marvel-2016.03.08 0 r STARTED      908421 934.7mb 10.65.251.17  bpe-es-5166.slc01.dev.c3.com 
+.marvel-2016.03.08 0 p STARTED      908421 934.7mb 10.65.246.220 bpe-es-9198.slc01.dev.c3.com 
+.marvel-2016.03.09 0 p STARTED      868424 889.7mb 10.65.217.119 bpe-es-8955.slc01.dev.c3.com 
+.marvel-2016.03.09 0 r STARTED      868424 889.7mb 10.65.246.22  bpe-es-3192.slc01.dev.c3.com 
+.marvel-2015.12.29 0 p STARTED      374853 553.1mb 10.65.254.163 bpe-es-4899.slc01.dev.c3.com 
+.marvel-2015.12.29 0 r STARTED      374853 553.1mb 10.65.246.220 bpe-es-9198.slc01.dev.c3.com 
+.marvel-2015.12.28 0 p STARTED      362034 539.7mb 10.65.254.163 bpe-es-4899.slc01.dev.c3.com 
+.marvel-2015.12.28 0 r STARTED      362034 539.7mb 10.65.221.214 bpe-es-9950.slc01.dev.c3.com 
+.marvel-2015.12.27 0 r STARTED      356848   539mb 10.65.254.163 bpe-es-4899.slc01.dev.c3.com 
+.marvel-2015.12.27 0 p STARTED      356848   539mb 10.65.203.164 bpe-es-3371.slc01.dev.c3.com 
+.marvel-2016.03.01 0 r STARTED      855520 888.2mb 10.65.251.17  bpe-es-5166.slc01.dev.c3.com 
+.marvel-2016.03.01 0 p STARTED      855520 888.2mb 10.65.221.214 bpe-es-9950.slc01.dev.c3.com 
+.marvel-2015.12.26 0 p STARTED      341590 522.6mb 10.65.254.163 bpe-es-4899.slc01.dev.c3.com 
+.marvel-2015.12.26 0 r STARTED      341590 522.6mb 10.65.221.214 bpe-es-9950.slc01.dev.c3.com 
+.marvel-2016.03.02 0 p STARTED      826767 858.3mb 10.65.203.164 bpe-es-3371.slc01.dev.c3.com 
+.marvel-2016.03.02 0 r STARTED      826767 858.3mb 10.65.221.106 bpe-es-4948.slc01.dev.c3.com 
+.marvel-2016.03.03 0 r STARTED      876258 903.2mb 10.65.251.17  bpe-es-5166.slc01.dev.c3.com 
+.marvel-2016.03.03 0 p STARTED      876258 903.2mb 10.65.217.119 bpe-es-8955.slc01.dev.c3.com 
 ```
 
 * <a name="capichckhealth""></a>Cluster Health 
