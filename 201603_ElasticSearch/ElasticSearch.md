@@ -36,6 +36,7 @@
         * [Search API](#sapi)
             * [Simple One](#sapisimple)
             * [Complicated One](#sapicomplicate)
+            * [Keyword Search](#keywordsrch)
             * [Aggregate](#sapiagg)
             * [Filter/Sort](#sapifs)
 * [Advanced](#adv)
@@ -343,6 +344,32 @@ $ curl -XPOST 'http://localhost:9200/twitter/tweet/_search' -d '{
         "term" : { "user" : "kimchy" }
     }
 }'
+```
+
+* <a name="keywordsrch"></a> Keyword Search
+
+```
+{
+  "query": {
+    "filtered": {
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "match": {
+                "AUCT_TITL": {
+                  "query": "iphone",
+                  "operator": "and"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "size": 50
+}
 ```
 
 * <a name="sapiagg"></a>Aggregate
