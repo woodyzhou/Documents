@@ -199,7 +199,7 @@ path.logs: /opt/ep/logs
     *  15 Million Records
     *   7 Million Records
     *  25 Million Records
-* index throughput (>12K per second)
+* index throughput (>16K per second)
     * 12K per second
     *  8K per second
     *  6K per second
