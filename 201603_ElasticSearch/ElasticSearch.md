@@ -19,8 +19,10 @@
         * [Cluster](#cluster)
         * [Index](#index)
         * [Scale](#scale)
+        * [What's inside?](#wsi)
 * [ES Cluster](#esc)
     * [Deploy](#deploy)
+    * [Performance](#prf)
     * [APIs](#api)
         * [Cluster APIs](#api)
             * [Shards Status](#capihckshard)
@@ -124,6 +126,7 @@ Deploy your own Elasticsearch cluster in seconds. A fully hosted and managed sol
 	* Primary
 	* Replica (runtime config)
 	* **number\_of\_shards** = index\_size / max\_shard\_size
+    * `shard = hash(routing) % number_of_primary_shards`
 
 ![](Images/es-cluster-arch1.png)
 
@@ -136,7 +139,11 @@ Deploy your own Elasticsearch cluster in seconds. A fully hosted and managed sol
 * Runtime change replica number
 * Shard number is fixed in whole index lifecycle
 
+#### <a name="wsi"></a>What's inside?
 
+1. [Distributed Document Store](https://www.elastic.co/guide/en/elasticsearch/guide/master/distributed-docs.html)
+2. [Distributed Search Execution](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-search.html)
+3. [Inside a Shard](https://www.elastic.co/guide/en/elasticsearch/guide/current/inside-a-shard.html)
 
 ## <a name="esc"></a>ES Cluster
 
@@ -184,6 +191,23 @@ http.cors.enabled: true
 path.data: ["/mnt/data"]
 path.logs: /opt/ep/logs
 ```
+
+### <a name="prf"></a>Performance
+
+* 4 indices (8 shards each)
+    * 120 Million Records
+    *  15 Million Records
+    *   7 Million Records
+    *  25 Million Records
+* index throughput (>12K per second)
+    * 12K per second
+    *  8K per second
+    *  6K per second
+    *  9K per second
+* query 
+    * regular search top 500 (2.2s)
+    * four aggregations on all records (4s)
+    * nine aggregation group by buckets on all records (12.6s)
 
 ### <a name="api"></a>APIs
 
@@ -715,3 +739,6 @@ scrollResp.getHits().getHits().length
 ## <a name="ref"></a>Reference
 
 1. [ES Performance](https://blog.liip.ch/archive/2013/07/19/on-elasticsearch-performance.html)
+2. [Inside a Shard](https://www.elastic.co/guide/en/elasticsearch/guide/current/inside-a-shard.html)
+3. [Distributed Search Execution](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-search.html)
+4. [Distributed Document Store](https://www.elastic.co/guide/en/elasticsearch/guide/master/distributed-docs.html)
